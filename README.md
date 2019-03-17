@@ -31,3 +31,16 @@ Preparando pastas para o desenvolvimento
     git pull origin master //Este comando resgata as últimas alterações do da branch master. Obs: a branch master apenas quando o projeto for finalizado.
     
     git push origin seuabranch //Este comando envia para o seu repositório e para o orginal as alterações na sua branch. 
+
+- Erros de execução dos comandos:
+cmake ..
+cmake --build . --config Release
+
+Primeiro faça estes comandos:
+cd dlib-19.17/tools/imglab/
+rm -R build
+mkdir build
+sudo apt install libdlib-dev
+sudo apt-get install libx11-dev
+cmake ..
+cmake --build . --config Release
