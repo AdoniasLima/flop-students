@@ -36,11 +36,11 @@ Preparando pastas para o desenvolvimento
 cmake ..
 cmake --build . --config Release
 
-Primeiro faça estes comandos:
-cd dlib-19.17/tools/imglab/
-rm -R build
-mkdir build
-sudo apt install libdlib-dev
-sudo apt-get install libx11-dev
-cmake ..
-cmake --build . --config Release
+Primeiro faça estes comandos:  
+cd dlib-19.17/tools/imglab/  
+rm -R build  
+mkdir build  
+sudo apt install libdlib-dev  
+sudo apt-get install libx11-dev  
+cmake ..  
+cmake --build . --config Release  
