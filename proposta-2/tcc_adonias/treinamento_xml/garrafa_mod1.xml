@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool.</comment>
+<images>
+  <image file='../imagens_garrafas/garrafa1.jpg'>
+    <box top='18' left='84' width='64' height='181'/>
+  </image>
+  <image file='../imagens_garrafas/garrafa2.jpg'>
+    <box top='27' left='181' width='153' height='449'/>
+  </image>
+  <image file='../imagens_garrafas/garrafa3.jpg'>
+    <box top='26' left='168' width='165' height='454'/>
+  </image>
+  <image file='../imagens_garrafas/garrafa4.jpg'>
+    <box top='23' left='112' width='139' height='465'/>
+  </image>
+  <image file='../imagens_garrafas/garrafa5.jpg'>
+    <box top='71' left='113' width='79' height='248'/>
+  </image>
+</images>
+</dataset>

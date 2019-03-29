@@ -15,7 +15,7 @@ dados_xml_svm = [
 for dados in dados_xml_svm:
     print(dados[0][1])
 
-dados = dlib.test_simple_object_detector("../treinamento_xml/treinamento_garrafas.xml", "../treinamento_xml/detector_garrafas.svm")
+dados = dlib.test_simple_object_detector("../treinamento_xml/garrafa_mod1.xml", "../treinamento_xml/garrafa_mod1.svm")
 print(dados.average_precision) #dados é uma variável que está recebendo a classe acima.
 
 if dados.average_precision > 0.5:
@@ -23,10 +23,10 @@ if dados.average_precision > 0.5:
 else:
         print('É um valor menor!')
 
-detectorRelogio = dlib.simple_object_detector("../treinamento_xml/detector_garrafas.svm")
-for imagem in glob.glob(os.path.join("../imagens_garrafas", "*.jpg")):
+detectorRelogio = dlib.simple_object_detector("../treinamento_xml/garrafa_mod1.svm")
+for imagem in glob.glob(os.path.join("../imagens_garrafas", "teste.jpg")):
     img = cv2.imread(imagem)
-    objetos_detectados = detectorRelogio(img, 2)
+    objetos_detectados = detectorRelogio(img, 3)
     for d in objetos_detectados:
         e, t, d, b = (int(d.left()), int(d.top()), int(d.right()), int(d.bottom()))
         print(e,t,d,b)
